@@ -7,6 +7,19 @@ module.exports = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+	container:{
+		center: true,
+		padding: '15px'
+	},
+	screens: {
+		sm:'640px',
+		md:'768px',
+		lg:'960px',
+		xl:'1200px'
+	},
+	fontFamily:{
+		primary:'var(--font-jetbrainsMono)'
+	},
   	extend: {
   		backgroundImage: {
   			'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -42,7 +55,8 @@ module.exports = {
   			},
   			accent: {
   				DEFAULT: 'hsl(var(--accent))',
-  				foreground: 'hsl(var(--accent-foreground))'
+  				foreground: 'hsl(var(--accent-foreground))',
+				hover: 'hsl(var(--accent-hover))'
   			},
   			destructive: {
   				DEFAULT: 'hsl(var(--destructive))',
