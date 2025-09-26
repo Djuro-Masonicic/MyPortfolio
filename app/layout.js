@@ -19,11 +19,19 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={jetBrainsMono.variable}>
-        <Header />
-        <StairTransition/>
-        <PageTransition>
+        <Header  />
+
+        <div className="hidden xl:block">
+
+        <StairTransition />
+        <PageTransition className={"hidden xl:flex"}>
         {children}
         </PageTransition>
+        </div>
+
+        <div className="xl:hidden">
+        {children}
+        </div>
       </body>
     </html>
   );
