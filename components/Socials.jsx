@@ -18,14 +18,6 @@ const socials = [
     icon: <FaLinkedinIn />,
     path: "https://www.linkedin.com/in/djuro-masonicic",
   },
-  // {
-  //   icon: <FaInstagram />,
-  //   path: "https://www.instagram.com/djuro_masonicic",
-  // },
-  // {
-  //   icon: <FaFacebook />,
-  //   path: "https://www.facebook.com/djuro.masonicic",
-  // },
   {
     icon: <FaUpwork />,
     path: "https://www.upwork.com/freelancers/djuromasonicic",

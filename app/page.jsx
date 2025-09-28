@@ -1,4 +1,5 @@
 import Photo from "@/components/Photo";
+import ScrollDownArrow from "@/components/ScrollDownArrow";
 import Social from "@/components/Socials";
 import Stats from "@/components/Stats";
 import { Button } from "@/components/ui/button";
@@ -6,22 +7,22 @@ import { FiDownload } from "react-icons/fi";
 
 const Home = ({}) => {
   return (
-    <section className="h-full">
-      <div className="container mx-auto h-full">
+    <div className="h-full">
+      <section className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-0 xl:pb-20">
           {/* text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-md">Software Developer</span>
             <h1 className="h1 mb-6">
               Hello I'm <br />
-              <span className="text-accent"> Djuro Masonicic </span>
+              <span className="text-accent"> Đuro Masoničić </span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80 ">
+            <p className="max-w-[500px] mb-4 xl:mb-8 text-white/80 ">
               I specialize in building seamless digital solutions and bring
               strong expertise in diverse programming tools and frameworks.
             </p>
             {/* btn and socials */}
-            <div className="flex flex-col xl:flex-row items-center gap-8">
+            <div className="flex flex-col xl:flex-row items-center gap-5 xl:gap-8">
               <Button
                 variant="outline"
                 size="lg"
@@ -38,11 +39,15 @@ const Home = ({}) => {
           </div>
           <div className=" order-1 xl:order-none mb-8 xl:mb-0"><Photo/></div>
         </div>
-      <Stats />
-      </div>
-      <section>
+    
       </section>
-    </section>
+         <section>
+          <Stats />
+      </section>
+            {/* <ScrollDownArrow sectionSelector="section" offset={0} /> */}
+
+    </div>
+    
   );
 };
 

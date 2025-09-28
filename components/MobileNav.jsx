@@ -4,6 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
  import  {CiMenuFries} from "react-icons/ci"
 import { Sheet, SheetClose, SheetContent, SheetTrigger } from "./ui/sheet";
+import Image from "next/image";
 
 
  const links = [
@@ -35,14 +36,25 @@ const MobileNav = ({}) => {
 
   return <Sheet>
     <SheetTrigger className="flex justify-center items-center">
-        <CiMenuFries className="text-[32px] text-accent"></CiMenuFries>
+        <CiMenuFries className="text-[3vh] text-accent"></CiMenuFries>
     </SheetTrigger>
     <SheetContent className="flex flex-col" >
         {/* logo */}
   
         <div className="mt-32 mb-40 text-center text-2xl">
           <Link href={"/"}>
-          <h1 className="text-4xl font-semibold">Djuro <span className="text-accent">.</span></h1>
+          {/* <h1 className="text-4xl font-semibold">Djuro <span className="text-accent">.</span></h1> */}
+               <Image
+                                  src="/logo3Edited.PNG"
+                                  priority
+                                  quality={100}
+                                  width={400}
+                                  height={400}
+                                  color="transparent"
+                                
+                              
+                                  className="object-contain bg-transparent w-[80%] h-[80%] mx-auto outline-dotted  rounded-full"
+                                />
           </Link>
         </div>
         {/* nav */}
