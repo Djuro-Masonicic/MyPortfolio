@@ -42,6 +42,9 @@ const MobileNav = ({}) => {
         {/* logo */}
   
         <div className="mt-32 mb-40 text-center text-2xl">
+          <SheetClose asChild>
+
+       
           <Link href={"/"}>
           {/* <h1 className="text-4xl font-semibold">Djuro <span className="text-accent">.</span></h1> */}
                <Image
@@ -56,6 +59,7 @@ const MobileNav = ({}) => {
                                   className="object-contain bg-transparent w-[80%] h-[80%] mx-auto outline-dotted  rounded-full"
                                 />
           </Link>
+             </SheetClose> 
         </div>
         {/* nav */}
         <nav className="flex flex-col justify-center items-center gap-8">
